@@ -1,0 +1,101 @@
+/* common css */
+
+body {
+	margin: 0 auto;
+	/* Typography */
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 400;
+}
+
+.border,
+.list-section,
+.input-section,
+.clear-section {
+	width: 50%;
+	margin: 0 auto; 
+}
+
+/* header css */
+
+.banner-section {
+	width: 95%;
+	margin: 1em auto;
+	background-color: #1ceabc;
+	text-align: center;
+	padding: 1.5em 1em;
+}
+
+.title {
+	color: white;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 300;
+	font-size: 2.5em;
+	margin-top: 0.5em;
+
+}
+
+/* input css */
+
+
+.input-section {
+
+}
+
+.instructions {
+	font-size: 0.85em;
+	font-style: italic;
+
+}
+
+
+.border {
+	border-bottom: 1px solid #000;
+	padding: 1em 0 1em 0;
+}
+
+/* list css */
+
+
+.list-section {
+
+}
+
+
+ul {
+	list-style: none;
+
+}
+
+
+.add {
+	background-color: white;
+	border-color: #333366;
+	padding: 1em 1em;
+}
+
+.item {
+	background-color: #eaeaea;
+	border-color: #333366;
+	padding: 1em 1em;
+}
+
+.completed {
+	background-color: #1ceabc;
+	border-color: #333366;
+	padding: 1em 1em;
+	/* Typography */
+	color: white;
+}
+
+
+
+
+/* button css */
+
+button #clear-list {
+	background-color: #333366;
+	padding: 0 auto;
+	cursor: pointer;
+	/* typography */
+	color: white;
+}
