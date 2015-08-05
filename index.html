@@ -3,7 +3,7 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Shopping List</title>
-	<link href='http://fonts.googleapis.com/css?family=Dosis:300,400|Open+Sans:400,600' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Josefin+Sans:400,100,300,600|Open+Sans:300,400,600,700' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" type="text/css" href="css/normalize.css">
 	<link rel="stylesheet" type="text/css" href="css/styles.css">
 	<script src="http://code.jquery.com/jquery.min.js"></script>
@@ -12,13 +12,13 @@
 <body>
 	<header class="banner-section">
  		<img src="images/shopping-cart-icon.svg" alt="shopping-cart-icon" height="130px" width="130px">
-		<h1 class="title">SHOPPING LIST</h1>
+		<h1 class="title">Shopping List</h1>
 	</header>
 
 	<section class="input-section">
 		<p class="instructions">Add the items you need below, tick them off as you go and delete them when you're done.</p>
 		<form id="add-to-list">
-		<input type="text" name="add" placeholder="Add items">
+		<input type="text" id="text-input" placeholder="Add item…">
 		<input type="submit" id="addItem" value="+">
 		</form>
 	</section>
@@ -53,8 +53,10 @@
 	</section>
 
 	<section class="clear-section">
-		<input type="reset" value="Clear List Reset Input" /><br>
-		<button type="reset" onclick="">Clear List Button</button>
+		<input type="reset" value="Clear List Reset Input" id="reset-button"/>
+		<br>
+		<br>
+		<button type="reset" onclick="" id="reset-button">Clear List Button</button>
 	</section>
 
 </body>

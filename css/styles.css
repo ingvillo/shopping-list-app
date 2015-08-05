@@ -4,13 +4,14 @@ body {
 	margin: 0 auto;
 	/* Typography */
 	font-family: 'Open Sans', sans-serif;
-	font-weight: 400;
+	font-weight: 300;
+	color: #666666;
 }
 
 .list-section,
 .input-section,
 .clear-section {
-	width: 35em;
+	width: 30em;
 	margin: 0 auto; 
 }
 
@@ -22,16 +23,21 @@ body {
 	margin: 0 auto;
 	background-color: #1ceabc;
 	text-align: center;
-	padding: 1.5em 1em;
+	padding: 1.5em;
+}
+
+img {
+
 }
 
 .title {
-	color: white;
-	font-family: 'Open Sans', sans-serif;
-	font-weight: 300;
-	font-size: 2.25em;
 	margin-top: 0.5em;
-
+	color: white;
+	font-family: 'Josefin Sans', sans-serif;
+	font-weight: 300;
+	font-size: 2.5em;
+	letter-spacing: 0.1em;
+	
 }
 
 /* input css */
@@ -46,23 +52,39 @@ body {
 	/* Typography */
 	font-size: 0.9em;
 	font-style: italic;
+	line-height: 1.5em;
 
 }
 
+
 #add-to-list {
-	margin-top: 1em;
+	/*border: 2px solid red;*/
+	margin-top: 1.5em;
+}
+
+#text-input {
+	width: 70%;
+	height: 2.5em;
+	/*border: 1px solid red;*/
+	padding-left: 1em;
+	/* Typography */
+	font-style: italic;
 }
 
 
 #addItem {
-	width: 40px;
-	height: 30px;
+	width: 2em;
+	height: 2em;
+	background-color: #1ceabc;
 	border-style: none;
+	color: white;
+	margin-left: 0.5em;
 
 }
 
 #addItem:hover {
-	background-color: #1ceabc;
+	background-color: #eaeaea;
+	color: #666666;
 
 }
 
@@ -103,13 +125,13 @@ ul {
 
  
 .new-item {
-
 }
 
 .ticked-item {
 	background-color: #1ceabc;
 	/* Typography */
 	color: white;
+	font-weight: 300;
 }
 
 /* ticked box delete button */
@@ -132,10 +154,6 @@ ul {
 	color: white;
 }
 
-.checkbox:hover {
-	background-color: #eaeaea;
-	color: black;
-}
 
 .delete {
 	float: right;
@@ -143,16 +161,18 @@ ul {
 	color: white;
 }
 
+.checkbox:hover,
 .delete:hover {
 	background-color: #eaeaea;
-	color: black;
+	color: #666666;
 }
 
 
 /* reset button css */
 
-button #clear-list {
-	background-color: #333366;
+#reset-button {
+	background-color: #999999;
+	border-style: none;
 	padding: 0 auto;
 	cursor: pointer;
 	display: inline-block;
