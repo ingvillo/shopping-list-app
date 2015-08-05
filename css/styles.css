@@ -10,7 +10,7 @@ body {
 .list-section,
 .input-section,
 .clear-section {
-	width: 50%;
+	width: 35em;
 	margin: 0 auto; 
 }
 
@@ -18,6 +18,7 @@ body {
 
 .banner-section {
 	width: 100%;
+	height: 13rem;
 	margin: 0 auto;
 	background-color: #1ceabc;
 	text-align: center;
@@ -28,7 +29,7 @@ body {
 	color: white;
 	font-family: 'Open Sans', sans-serif;
 	font-weight: 300;
-	font-size: 2.5em;
+	font-size: 2.25em;
 	margin-top: 0.5em;
 
 }
@@ -43,22 +44,34 @@ body {
 .instructions {
 	padding-top: 1em;
 	/* Typography */
-	font-size: 0.85em;
+	font-size: 0.9em;
 	font-style: italic;
 
 }
 
-#addItems {
+#add-to-list {
 	margin-top: 1em;
 }
 
 
+#addItem {
+	width: 40px;
+	height: 30px;
+	border-style: none;
+
+}
+
+#addItem:hover {
+	background-color: #1ceabc;
+
+}
+
 hr {
 
 	border-bottom: 0.5px solid #000;
-	margin: 1.5em auto;
+	margin: 2em auto 0 auto;
 	display: block;
-	max-width: 50%;
+	max-width: 35em;
 }
 
 /* list css */
@@ -76,15 +89,16 @@ ul {
 }
 
 #itemList {
-	padding: 1em;
-
+	padding: 0;
 }
 
 
 .new-item,
 .ticked-item {
-	height: 3em;
+	height: 2.5em;
 	display: block;
+	padding-top: 0.8em;
+	/*border: 1px solid red;*/
 }
 
  
@@ -102,16 +116,36 @@ ul {
 
 .checkbox,
 .delete {
+	margin-left: 1.2em;
+	margin-right: 1.2em;
+	width: 28px;
+	height: 28px;
+	border-style: none;
+	border-radius: 1.25rem;
+
 
 }
 
 
 .checkbox {
+	background-color: #1ceabc;
+	color: white;
+}
 
+.checkbox:hover {
+	background-color: #eaeaea;
+	color: black;
 }
 
 .delete {
 	float: right;
+	background-color: #999999;
+	color: white;
+}
+
+.delete:hover {
+	background-color: #eaeaea;
+	color: black;
 }
 
 
@@ -121,8 +155,24 @@ button #clear-list {
 	background-color: #333366;
 	padding: 0 auto;
 	cursor: pointer;
+	display: inline-block;
+	text-align: center;
+	width: 100%;
 	/* typography */
 	color: white;
+
 }
 
+/*** Responsive Design ***/
 
+@media (max-width: 1020px) and (min-width: 661px)  {
+	
+}
+
+@media (max-width: 660px) {
+	.list-section,
+	.input-section,
+	.clear-section {
+	width: 100%;
+	}
+}	
