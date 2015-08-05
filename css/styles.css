@@ -23,7 +23,7 @@ body {
 	margin: 0 auto;
 	background-color: #1ceabc;
 	text-align: center;
-	padding: 1.5em;
+	padding: 2em 0.5em 1em 0.5em;
 }
 
 img {
@@ -48,7 +48,7 @@ img {
 }
 
 .instructions {
-	padding-top: 1em;
+	padding-top: 1.5em;
 	/* Typography */
 	font-size: 0.9em;
 	font-style: italic;
@@ -75,25 +75,20 @@ img {
 #addItem {
 	width: 2em;
 	height: 2em;
-	background-color: #1ceabc;
+	background-color: transparent;
 	border-style: none;
-	color: white;
+	color: #666666;
 	margin-left: 0.5em;
 
 }
 
-#addItem:hover {
-	background-color: #eaeaea;
-	color: #666666;
-
-}
 
 hr {
 
 	border-bottom: 0.5px solid #000;
 	margin: 2em auto 0 auto;
 	display: block;
-	max-width: 35em;
+	max-width: 30em;
 }
 
 /* list css */
@@ -144,55 +139,79 @@ ul {
 	height: 28px;
 	border-style: none;
 	border-radius: 1.25rem;
+	background-color: transparent;
+	color: #666666;
 
 
-}
-
-
-.checkbox {
-	background-color: #1ceabc;
-	color: white;
 }
 
 
 .delete {
 	float: right;
+
+}
+
+#addItem:hover,
+.checkbox:hover {
+	background-color: #1ceabc;
+	color: white;
+}
+
+.delete:hover {
 	background-color: #999999;
 	color: white;
 }
 
-.checkbox:hover,
-.delete:hover {
-	background-color: #eaeaea;
+.ticked-item .checkbox,
+.ticked-item .delete {
+	color: white;
+	/*background-color: #1ceabc;*/	
+}
+
+.ticked-item .checkbox:hover,
+.ticked-item .delete:hover {
 	color: #666666;
+	background-color: #1ceabc;	
 }
 
 
 /* reset button css */
 
 #reset-button {
-	background-color: #999999;
+	margin-top: 1em;
+	background-color: #666666;
 	border-style: none;
 	padding: 0 auto;
 	cursor: pointer;
 	display: inline-block;
 	text-align: center;
 	width: 100%;
+	height: 2.5em;
+
 	/* typography */
 	color: white;
 
 }
 
+
+#reset-button:hover {
+	background-color: #cccccc;
+	/* typography */
+	color: #666666;
+	}
+
 /*** Responsive Design ***/
 
-@media (max-width: 1020px) and (min-width: 661px)  {
-	
-}
 
 @media (max-width: 660px) {
+	
 	.list-section,
 	.input-section,
 	.clear-section {
 	width: 100%;
+	}
+
+	.input-section {
+	margin: 0 0.5em;
 	}
 }	
