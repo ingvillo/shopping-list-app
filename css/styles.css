@@ -27,7 +27,7 @@ body {
 }
 
 img {
-
+	/* Designed by Freepik */
 }
 
 .title {
@@ -68,6 +68,7 @@ img {
 	/*border: 1px solid red;*/
 	padding-left: 1em;
 	/* Typography */
+	font-size: 0.9em;
 	font-style: italic;
 }
 
@@ -95,7 +96,9 @@ hr {
 
 
 .list-section {
-
+	
+	letter-spacing: 0.05em;
+	text-transform: uppercase;
 }
 
 
@@ -158,7 +161,7 @@ ul {
 }
 
 .delete:hover {
-	background-color: #999999;
+	background-color: #666666;
 	color: white;
 }
 
@@ -179,7 +182,7 @@ ul {
 
 #reset-button {
 	margin-top: 1em;
-	background-color: #666666;
+	background-color: #ff9933;
 	border-style: none;
 	padding: 0 auto;
 	cursor: pointer;
@@ -190,28 +193,39 @@ ul {
 
 	/* typography */
 	color: white;
+	text-transform: uppercase;
 
 }
 
 
 #reset-button:hover {
-	background-color: #cccccc;
-	/* typography */
-	color: #666666;
-	}
+	background-color: #666666;
+}
 
 /*** Responsive Design ***/
 
 
-@media (max-width: 660px) {
+@media (max-width: 640px) {
 	
 	.list-section,
-	.input-section,
 	.clear-section {
-	width: 100%;
+		width: 100%;
 	}
 
 	.input-section {
-	margin: 0 0.5em;
+		width: 94%;
 	}
-}	
+
+	#text-input {
+		width: 65%;
+}
+
+	hr {
+		margin: 2em auto 0 auto;
+		max-width: 88%;
+}
+
+	
+
+}
+
