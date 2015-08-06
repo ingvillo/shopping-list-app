@@ -17,8 +17,8 @@
 
 	<section class="input-section">
 		<p class="instructions">Add the items you need below, tick them off as you go and delete them when you're done.</p>
-		<form id="add-to-list">
-		<input type="text" id="text-input" placeholder="Add item…">
+		<form id="listForm">
+		<input type="text" maxlength="26" id="newItem" placeholder="Add item…">
 		<input type="submit" id="addItem" value="+">
 		</form>
 	</section>
@@ -28,26 +28,7 @@
 	<section class="list-section">
 
 		<ul id="itemList">
-			<li class="new-item">
-				<button class="checkbox">✓</button>
-				<span class="item">Asparagus</span>
-				<button class="delete">x</button>
-			</li>
-			<li class="new-item">
-				<button class="checkbox">✓</button>
-				<span class="item">Chicken</span>
-				<button class="delete">x</button>
-			</li>
-			<li class="ticked-item">
-				<button class="checkbox">✓</button>
-				<span class="item">Cauliflower</span>
-				<button class="delete">x</button>
-			</li>
-			<li class="ticked-item">
-				<button class="checkbox">✓</button>
-				<span class="item">Spinach</span>
-				<button class="delete">x</button>
-			</li>
+			
 		</ul>
 
 	</section>
