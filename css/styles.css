@@ -83,7 +83,7 @@ img {
 
 }
 
-#reset-button,
+#resetButton,
 #newItem,
 #addItem:focus,
 .checkbox:focus,
@@ -187,7 +187,7 @@ li,
 
 /* reset button css */
 
-#reset-button {
+#resetButton {
 	margin-top: 1em;
 	background-color: #ff9933;
 	border-style: none;
@@ -201,11 +201,12 @@ li,
 	/* typography */
 	color: white;
 	text-transform: uppercase;
+	letter-spacing: 0.08em;
 
 }
 
 
-#reset-button:hover {
+#resetButton:hover {
 	background-color: #666666;
 }
 
