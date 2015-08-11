@@ -10,6 +10,8 @@ function addListItem() {
         return false;
     }
     
+    /* when added, item is placed at top of list  */
+
     list.prepend(item);
     $(newItem).val('');
 }
@@ -26,7 +28,8 @@ function tickItem() {
 
     $(this).parent().toggleClass('tick'); 
     /* Moves ticked items to the bottom of list */
-	$('#itemList').find('.tick').appendTo('#itemList');}
+	$('#itemList').find('.tick').appendTo('#itemList');
+}
 
 
 

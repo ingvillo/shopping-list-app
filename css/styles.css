@@ -78,6 +78,7 @@ img {
 	height: 2em;
 	background-color: transparent;
 	border-style: none;
+	border-radius: 1.25rem;
 	color: #666666;
 	margin-left: 0.5em;
 
