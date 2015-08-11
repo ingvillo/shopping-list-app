@@ -57,12 +57,12 @@ img {
 }
 
 
-#add-to-list {
+#listForm {
 	/*border: 2px solid red;*/
 	margin-top: 1.5em;
 }
 
-#text-input {
+#newItem {
 	width: 70%;
 	height: 2.5em;
 	/*border: 1px solid red;*/
@@ -78,11 +78,20 @@ img {
 	height: 2em;
 	background-color: transparent;
 	border-style: none;
+	border-radius: 1.25rem;
 	color: #666666;
 	margin-left: 0.5em;
 
 }
 
+#resetButton,
+#newItem,
+#addItem:focus,
+.checkbox:focus,
+.tick:focus,
+.delete:focus {
+	outline: none;
+} 
 
 hr {
 
@@ -113,24 +122,22 @@ ul {
 }
 
 
-.new-item,
-.ticked-item {
-	height: 2.5em;
+ 
+li,
+.tick {
+	height: 2em;
 	display: block;
-	padding-top: 0.8em;
+	padding-top: 0.5em;
 	/*border: 1px solid red;*/
 }
 
- 
-.new-item {
-}
-
-.ticked-item {
+.tick {
 	background-color: #1ceabc;
 	/* Typography */
 	color: white;
 	font-weight: 300;
 }
+
 
 /* ticked box delete button */
 
@@ -154,6 +161,7 @@ ul {
 
 }
 
+
 #addItem:hover,
 .checkbox:hover {
 	background-color: #1ceabc;
@@ -165,14 +173,14 @@ ul {
 	color: white;
 }
 
-.ticked-item .checkbox,
-.ticked-item .delete {
+.tick .checkbox,
+.tick .delete {
 	color: white;
 	/*background-color: #1ceabc;*/	
 }
 
-.ticked-item .checkbox:hover,
-.ticked-item .delete:hover {
+.tick .checkbox:hover,
+.tick .delete:hover {
 	color: #666666;
 	background-color: #1ceabc;	
 }
@@ -180,7 +188,7 @@ ul {
 
 /* reset button css */
 
-#reset-button {
+#resetButton {
 	margin-top: 1em;
 	background-color: #ff9933;
 	border-style: none;
@@ -194,11 +202,12 @@ ul {
 	/* typography */
 	color: white;
 	text-transform: uppercase;
+	letter-spacing: 0.08em;
 
 }
 
 
-#reset-button:hover {
+#resetButton:hover {
 	background-color: #666666;
 }
 
